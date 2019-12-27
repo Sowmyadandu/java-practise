@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<EMPS>
+<EMP CATEGORY="PART">
+<EMPNO>1</EMPNO>
+<NAME>poornesh</NAME>
+<BASIC>8233</BASIC>
+</EMP>
+<EMP>
+<EMPNO>3</EMPNO>
+<NAME>sai</NAME>
+<BASIC>8444822</BASIC>
+</EMP>
+</EMPS>

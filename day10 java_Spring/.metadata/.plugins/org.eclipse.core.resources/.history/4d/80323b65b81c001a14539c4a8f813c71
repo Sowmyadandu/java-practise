@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE beans PUBLIC 
+"-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd"> 
+<beans>
+<bean id="studentOne" class="com.hcl.beanwiring.Student">
+<property name="sNo" value="1"/>
+<property name="name" value="poori"/>
+<property name="LunchBox">
+<bean class="com.hcl.beanwiring.LunchBox">
+<property name="snacks" value="pizza..."/>
+</bean>
+</property>
+</bean>
+<bean id="studentTwo" class="com.hcl.beanwiring.Student">
+<property name="sNo" value="2"/>
+<property name="name" value="sai"/>
+<property name="LunchBox">
+<bean class="com.hcl.beanwiring.LunchBox">
+<property name="snacks" value="puff..."/>
+</bean>
+</property>
+</bean>
+<bean id="studentThree" class="com.hcl.beanwiring.Student">
+<property name="sNo" value="3"/>
+<property name="name" value="sri"/>
+<property name="LunchBox">
+<bean class="com.hcl.beanwiring.LunchBox">
+<property name="snacks" value="sandwitch..."/>
+</bean>
+</property>
+</bean>
+<bean id="faculty" class="com.hcl.beanwiring.Faculty">
+<property name="name" value="prasanna"/>
+<property name="students">
+<list><ref bean="studentOne"/>
+<ref bean="studentTwo"/>
+<ref bean="studentThree"/>
+</list>
+</property>
+</bean>
+</beans>

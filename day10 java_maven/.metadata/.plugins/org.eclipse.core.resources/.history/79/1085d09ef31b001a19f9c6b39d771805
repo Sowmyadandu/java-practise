@@ -1,0 +1,9 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:element name="PRODUCTNAME" type="complexTypeProductData"/>
+<xsd:complexType name="complexTypeProductData">
+<xsd:sequence>
+<xsd:element type="PRODUCT" type="complexTypeProdyct" minOccurs="1" maxOccurs="unbounded/"></xsd:element>
+
+</xsd:sequence>
+</xsd:complexType>
+<xsd:schema>
